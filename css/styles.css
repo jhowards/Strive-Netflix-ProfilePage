@@ -26,7 +26,6 @@
 
 body {
   background-color: #121212;
-  color: rgb(202, 196, 196);
   font-family: "Netflix Sans", sans-serif;
 }
 
@@ -37,6 +36,8 @@ body {
 .mainbody {
   text-align: left;
   max-width: 570px;
+  color: rgb(202, 196, 196);
+  line-height: 2;
 }
 
 .editprofiletext {
