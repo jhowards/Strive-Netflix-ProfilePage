@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Netflix Sans";
+  font-weight: 400;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff)
+      format("woff");
+}
+
+@font-face {
+  font-family: "Netflix Sans 2";
+  font-weight: 100;
+  font-display: optional;
+  src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2)
+      format("woff2"),
+    url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff)
+      format("woff");
+}
+
+.form-control::-webkit-input-placeholder {
+  color: white;
+  font-size: 110%;
+  font-family: "Netflix Sans", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: rgb(202, 196, 196);
+  font-family: "Netflix Sans", sans-serif;
+}
+
+.netflixlogo {
+  width: 130px;
+  height: auto;
+}
+.mainbody {
+  text-align: left;
+  max-width: 570px;
+}
+
+.editprofiletext {
+  color: white;
+}
+
+.topbar {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 13%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 100%;
+}
+
+.strive-image {
+  border-radius: 6px;
+  max-height: 130px;
+}
+
+.nameform {
+  border-radius: 0;
+  background-color: grey;
+  border-color: grey;
+  max-width: 350px;
+}
+.languagetext {
+  font-family: "Netflix Sans", sans-serif;
+  font-size: larger;
+  height: 20px;
+}
+
+.selectlang {
+  border-radius: 0;
+  background-color: black;
+  border-color: white;
+  width: 122px;
+  height: 28px;
+  text-align: left;
+  padding-top: 1px;
+}
+.dropdown-toggle::after {
+  margin-left: 32px;
+  vertical-align: 0.12em;
+}
+
+.maturitytext {
+  font-family: "Netflix Sans", sans-serif;
+  font-size: larger;
+  height: 20px;
+}
+
+.maturitybutton {
+  background-color: rgb(66, 66, 66);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  border-color: rgb(66, 66, 66);
+  height: 32px;
+  padding-top: 5px;
+}
+.ratingtextunder {
+  font-size: 15px;
+  color: white;
+  font-family: "Netflix Sans 2", sans-serif;
+}
+.spantext {
+  font-family: "Netflix Sans", sans-serif;
+}
+
+.editbtn {
+  border-radius: 0px;
+  background-color: transparent;
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  height: 34px;
+  width: 85px;
+  color: #6c757d;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: url("https://api.iconify.design/subway:tick.svg?width=1.8em&height=1.2em&color=%23898989");
+  border: 0.1em solid #000;
+  border-radius: 0em;
+  border-color: #464646;
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.4375em;
+  vertical-align: bottom;
+  color: red;
+  transition: 0.2s;
+  padding-top: 4px;
+  padding-left: 1.5px;
+}
+
+input[type="checkbox"] + label:active:before {
+  transform: scale(0);
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: transparent;
+  border-color: #464646;
+  color: rgb(179, 174, 174);
+  padding-left: 1.5px;
+  padding-top: 4px;
+}
+
+input[type="checkbox"]:disabled + label:before {
+  transform: scale(1);
+  border-color: #464646;
+}
+
+input[type="checkbox"]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: transparent;
+  border-color: #464646;
+}
+
+.checkboxtext {
+  font-family: "Netflix Sans 2", sans-serif;
+  font-size: 13px;
+  color: rgb(233, 233, 233);
+  line-height: 2.6;
+}
+
+.savebtn {
+  border-radius: 0px;
+  background-color: white;
+  border-color: white;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.18em;
+  height: 40px;
+  width: 105px;
+  color: black;
+  margin-right: 20px;
+}
+
+.cancelbtn {
+  border-radius: 0px;
+  background-color: transparent;
+  border-color: #6c757d;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  height: 40px;
+  width: 140px;
+  color: #6c757d;
+  margin-right: 20px;
+}
+
+.deletebtn {
+  border-radius: 0px;
+  background-color: transparent;
+  border-color: #6c757d;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  height: 40px;
+  width: 235px;
+  color: #6c757d;
+  margin-right: 20px;
+}
